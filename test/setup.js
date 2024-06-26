@@ -1,11 +1,11 @@
-global.$ = document.querySelector.bind(document);
-global.$$ = document.querySelectorAll.bind(document);
-
 import { Application } from '@hotwired/stimulus';
 import ZoomImageController from 'index';
 
 const application = Application.start();
 application.register('zoom-image', ZoomImageController);
+
+global.$ = document.querySelector.bind(document);
+global.$$ = document.querySelectorAll.bind(document);
 
 global.mockMouseEvent = (type, options = {}) => {
   let event = new MouseEvent(type, { bubbles: options.bubbles });
