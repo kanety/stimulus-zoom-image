@@ -4,7 +4,7 @@ A stimulus controller for zooming an image.
 
 ## Dependencies
 
-* @hotwired/stimulus 3.0
+* @hotwired/stimulus 3.0+
 
 ## Installation
 
